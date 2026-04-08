@@ -367,3 +367,83 @@ overflow: hidden;
     border: none;
     min-height: 500px;
 }
+/*-- Blog landing page --*/
+
+#blog-header {
+    background-color: var(--color-yellow);
+    padding: 6rem 6rem 4rem;
+    text-align: center;
+}
+
+#blog-header h1{
+    font-size: 6rem;
+    color: var(--color-teal);
+    text-transform: uppercase;
+}
+
+#blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1.5rem;
+    margin: 4rem 3rem;
+}
+
+.blog-grid-card {
+    background-color: var(--color-light-teal);
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 320px;
+    gap: 1.2rem;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.blog-grid-card:hover{
+    opacity: .85;
+}
+
+.blog-grid-card h2{
+    font-size: 2.4rem;
+    color:var(--color-teal);
+    line-height: 1.2;
+}
+
+.blog-grid-card p{
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+/*--CTA Card on the bottom right --*/
+
+.blog-cta-card{
+    background-color: var(--color-green);
+
+}
+
+.blog-cta-card h2{
+    color: var(--color-bg);
+    text-transform: uppercase;
+}
+.blog-cta-card p{
+    color: white;
+    opacity: .8;
+}
+
+.blog-cta-card a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.2rem 3rem;
+    background-color: var(--color-teal);
+    color: var(--color-bg);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.blog-cta-card a:hover{
+    background-color: var(--color-orange);
+}
