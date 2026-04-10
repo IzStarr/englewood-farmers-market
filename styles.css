@@ -18,6 +18,10 @@ html{
     padding: 0;
     box-sizing: border-box;
 }
+
+a, button {
+    cursor: pointer;
+}
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.6rem;
@@ -451,7 +455,7 @@ overflow: hidden;
 /* ---- Blog Post Page ---*/
 
 #blog-post {
-    margin: 4rem 3rem;
+    margin: 0 4rem 3rem;
     overflow:hidden;
 }
 
