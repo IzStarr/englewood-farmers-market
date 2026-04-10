@@ -447,3 +447,77 @@ overflow: hidden;
 .blog-cta-card a:hover{
     background-color: var(--color-orange);
 }
+
+/* ---- Blog Post Page ---*/
+
+#blog-post {
+    margin: 4rem 3rem;
+    overflow:hidden;
+}
+
+.post-top{
+background-image: url('../images/HeroMarketImage.jpg');
+background-size: cover;
+background-position: center;
+min-height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 6rem 5rem;
+gap:1.5rem;
+}
+
+
+.post-lead{
+    font-size:1.8rem;
+    text-transform: uppercase;
+    letter-spacing:0.2em;
+    color: var(--color-green-lt);
+}
+.post-top h1{
+    font-size: 8rem;
+    color: var(--color-bg);
+    line-height: 1.1;
+}
+
+.post-date{
+    font-size: 3rem;
+    color: var(--color-bg);
+    font-style: italic;
+}
+
+.post-blurb{
+    font-size: 2.8rem;
+    color: white;
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+
+.post-body{
+    padding: 4rem;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.post-body p{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color:var(--color-text);
+    max-width: 900px;
+}
+
+.post-back{
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--color-teal);
+    letter-spacing: .05rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+.post-back:hover{
+    color: var(--color-orange);
+}
