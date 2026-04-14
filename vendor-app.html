@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Englewood Farmer's Market</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html">
+      <p>Englewood <br>Farmer's Market</br></p>
+      </a>
+    </div>
+    <ul>
+      <li><a href="visit.html">Visit</a></li>
+      <li><a href="apply.html">Apply</a></li>
+      <li><a href="blog/">Blog</a></li>
+    </ul>
+  </nav>
+
+  <section id="apply-header">
+    <h1>Join the Market</h1>
+    <p class="page-lead"> Apply to bring your prodcuts to Englewood's first summer of markets.</p>
+  </section>
+
+  <!---Vendor Categories ---->
+  <section id="vendor-categories">
+    <div class="category-grid">
+
+        <div class="category-card">
+            <i class="fa-solid fa-tractor"></i>
+            <h3>Farmer / Rancher / Dairy</h3>
+        <p>Grow it, raise it, or produce it locally?</p>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-jar"></i>
+            <h3>Locally Produced Food Products</h3>
+        <p>Think jams, sauces, baked goods, honey, and so much more! If you made it here locally we want you at the market!</p>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h3>Made Goods</h3>
+        <p>Handcrafted jewlery, ceramics, candles, art, and beyond. If you made it by hand, come showcase it at your local market!</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- VENDOR FORM!-->
+   <section id="vendor-form">
+    <h2> Vendor Form</h2>
+    <form action="#" method="POST">
+       
+        <!--Form Field : Name-->
+    <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name required"></input>
+    </div>
+
+    <!--Form Field: Email-->
+    <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="your@email.com"></input>
+    </div>
+
+    <!--Form Field: Category -dropdown-->
+    <div class="form-field">
+        <label for="category">Category</label>
+        <select name="category" id="category" required>
+            <option value="" disabled selected> Select a Category</option>
+            <option value="farmer"> Farmer/ Rancher/ Dairy</option>
+            <option value="food"> Locally Produced Food Products</option>
+            <option value="goods"> Made Goods</option>
+        </select>
+    </div>
+   
+    <!-- Form field: Business Name-->
+    <div class="form-field".>
+        <label for="business"> Business Name</label>
+        <input type="text" id="business" name="business" placeholder="Your business name here" required></input>
+    </div>
+
+     <!-- Form field: Primary Product(s)-->
+    <div class="form-field".>
+        <label for="products"> Primary Product(s)</label>
+        <input type="text" id="products" name="products" placeholder="e.g. honey, candles, vegetables" required></input>
+    </div>
+
+         <!-- Form field: Phone Number-->
+    <div class="form-field".>
+        <label for="phone"> Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="(720) 555-0000" required></input>
+    </div>
+
+    <button type="submit">Submit Application</button>
+
+    </form>
+    </section>
+     <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <p>Englewood Farmer's Market</p>
+    </div>
+    <nav class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="visit.html">Hours and Information</a>
+      <a href="apply.html">Vendor Application</a>
+    </nav>
+  </footer>
+</body>
+</html>
