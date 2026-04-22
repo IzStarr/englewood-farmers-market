@@ -11,7 +11,7 @@
 
 }
 html{
-    font-size: 62.5%;
+    font-size: 70%;
 }
 *{
     margin: 0;
@@ -272,7 +272,7 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 320px;
+    min-height: 400px;
     flex:1;
     transition: opacity 0.2s;
 
@@ -414,14 +414,14 @@ overflow: hidden;
 
 .blog-grid-card h2{
     font-size: 2.4rem;
-    color:var(--color-teal);
+    color:var(--color-bg);
     line-height: 1.2;
 }
 
 .blog-grid-card p{
     font-size: 1.4rem;
     font-style: italic;
-    color: var(--color-text-muted);
+    color: var(--color-bg);
     line-height: 1.5;
 }
 /*--CTA Card on the bottom right --*/
@@ -454,6 +454,30 @@ overflow: hidden;
     background-color: var(--color-orange);
 }
 
+.card-duncan{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('images/duncan-park.jpg');
+    background-size: cover;
+    background-position: center 30%;
+}
+
+.card-rollcall{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('images/cherry-tomatoes-wide.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-insidelook{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('images/berries-sky.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
 /* ---- Blog Post Page ---*/
 
 #blog-post {
