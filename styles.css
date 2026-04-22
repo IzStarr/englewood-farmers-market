@@ -464,7 +464,7 @@ overflow: hidden;
 .post-top{
 background-image:
 linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
- url('../images/HeroMarketImage.jpg');
+ url('images/HeroMarketImage.jpg');
 background-size: cover;
 background-position: center;
 min-height: 500px;
@@ -715,4 +715,125 @@ form button[type="submit"]:hover{
     background-color: var(--color-orange);
     border: 2px solid var(--color-orange);
     color: var(--color-bg);
+}
+
+/*---- Thank You PAge ---*/
+
+#thankyou{
+    background-color: var(--color-yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 3rem;
+    gap: 2rem;
+}
+
+#thankyou .page-lead{
+    font-size: 1.4rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color:var(--color-green);
+}
+
+#thankyou h1{
+    font-size: 7rem;
+    color: var(--color-teal);
+    line-height: 1.1;
+}
+
+.thankyou-sub{
+    font-size: 1.8rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    max-width: 600px;
+}
+
+.thankyou-buttons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.thankyou-buttons a {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: var(--color-teal);
+    color: var(--color-bg);
+}
+
+.thankyou-buttons a:hover{
+    background-color: var(--color-orange);
+}
+
+/*---Contact Page----*/
+
+#contact-header,
+#contact-header h1,
+#contact-header .page-lead{
+    text-align: center;
+}
+
+#contact-content{
+    max-width: 700px;
+    margin: 5rem auto;
+    padding:0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.contact-intro{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: var(--color-text);
+    text-align: center;
+    font-style: italic;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem;
+    background-color: var(--color-yellow);
+}
+
+.contact-item i{
+    font-size: 3.5rem;
+    color: var(--color-teal);
+    width: 4rem;
+    text-align: center;
+}
+
+.contact-item div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-label{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+.contact-item a {
+    font-size: 1.6rem;
+    color: var(--color-teal);
+    line-height: 1.4;
+}
+
+.contact-item a:hover{
+    color: var(--color-orange);
 }
