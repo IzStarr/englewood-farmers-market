@@ -53,12 +53,11 @@
   </section>
 
   <!-- VENDOR FORM!-->
-   <section id="vendor-form">
-    <h2> Vendor Form</h2>
-<form action="https://api.web3forms.com/submit" method="POST">
-    
-    <input type="hidden" name="access_key" value="48fa2d19-6a43-4c61-821a-32425ac758e7" />
-    <input type="hidden" name="redirect" value="https://izstarr.github.io/englewood-farmers-market/thank-you.html" />
+<section id="vendor-form">
+  <h2>Vendor Form</h2>
+  <form action="https://api.web3forms.com/submit" method="POST" id="vendor-form-el">
+      <input type="hidden" name="access_key" value="48fa2d19-6a43-4c61-821a-32425ac758e7" />
+      <input type="hidden" name="redirect" value="https://izstarr.github.io/englewood-farmers-market/thank-you.html" />
        
         <!--Form Field : Name-->
     <div class="form-field">
@@ -116,5 +115,21 @@
       <a href="vendor-app.html">Vendor Application</a>
     </nav>
   </footer>
+  <!--- a little custom java script---->
+  <script>
+  const form = document.getElementById('vendor-form-el');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: data
+    }).then(response => {
+      if (response.ok) {
+        window.location.href = 'thank-you.html';
+      }
+    });
+  });
+</script>
 </body>
 </html>
