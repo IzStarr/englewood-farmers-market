@@ -1,6 +1,6 @@
 :root{
     --color-bg: #FCF9F5;
-    --color-yellow:#FFF6CE;
+    --color-yellow:#FFEAB9;
     --color-teal:#007397;
     --color-light-teal:#7EE0FF;
     --color-green:#489C29;
@@ -498,7 +498,23 @@ justify-content: center;
 padding: 6rem 5rem;
 gap:1.5rem;
 }
+.post-top-duncan{
+    background-image:
+linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+ url('images/duncan-park.jpg');
+}
 
+.post-top-rollcall{
+    background-image: 
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('images/cherry-tomatoes-wide.jpg'); 
+}
+
+.post-top-insidelook{
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('images/berries-sky.jpg');
+}
 
 .post-lead{
     font-size:1.6rem;
